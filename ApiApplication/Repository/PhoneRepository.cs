@@ -22,7 +22,7 @@ namespace ApiApplication.Repository
             return await FindByCondition(e => e.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
         }
 
-
+        //for
         //получить все
         public async Task<PagedList<Phone>> GetAllPhonesAsync(PhoneParameters phoneParameters, bool trackChanges)
         {

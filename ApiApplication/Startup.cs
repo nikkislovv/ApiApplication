@@ -37,7 +37,7 @@ namespace ApiApplication
         }
 
         public IConfiguration Configuration { get; }
-
+        //for 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -50,10 +50,10 @@ namespace ApiApplication
             services.ConfigureJWT();
             services.ConfigureSwagger();//
             services.AddAuthentication();
-            services.Configure<ApiBehaviorOptions>(options =>//for validation
-            {
-                options.SuppressModelStateInvalidFilter = true;
-            });
+            //services.Configure<ApiBehaviorOptions>(options =>//for validation
+            //{
+            //    options.SuppressModelStateInvalidFilter = true;
+            //});
 
             services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
